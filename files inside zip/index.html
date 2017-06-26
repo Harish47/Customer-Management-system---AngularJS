@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<html ng-app="customersApp">
+
+<head>
+<meta charset="UTF-8">
+<meta content="width=device-width,initial-scale=1" name="viewport">
+<link rel="stylesheet" href="styles/vendor/bootstrap/css/bootstrap.css" type="text/css">
+<link rel="stylesheet" href="styles/vendor/toaster.css" type="text/css">
+<link rel="stylesheet" href="styles/main.css" type="text/css">
+
+</head>
+
+<body>
+<toaster-container
+  toaster-options="{'close-button':true,'tap-to-dismiss': true, 'position-class': 'toast-top-right', 'prevent-duplicates': true, 'time-out':3000, 'max-opened' : 1, 'toast-class': 'font-default' }"></toaster-container>
+<script src="scripts/vendor/jquery.js"></script>
+<script src="scripts/vendor/angular.js"></script>
+<script src="scripts/vendor/bootstrap.js"></script>
+<script src="scripts/vendor/underscore.js"></script>
+<script src="scripts/vendor/angular-ui-router.js"></script>
+<script src="scripts/vendor/toaster.js"></script>
+<script src="scripts/app.js"></script>
+<div ui-view></div>
+
+</body>
+
+</html>

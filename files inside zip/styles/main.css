@@ -1,0 +1,23 @@
+.form-error{
+	color:#ff0000;
+}
+
+.cst-heading{
+	font-family: "Arial", sanSerif;
+	font-size:22px;
+	margin:30px 0px;
+}
+.content-wrapper{
+	border:1px solid #337ab7;
+	border-radius:4px;
+	min-height:300px;
+	padding:30px;
+}
+.customers-list .add{
+	margin:20px 20px;
+	display:block;
+}
+
+.customers-list a{
+	cursor:pointer;
+}

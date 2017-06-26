@@ -1,0 +1,28 @@
+<div class="container cst-list">
+    <div class="cst-heading">Customers List</div>
+    <div class="customers-list content-wrapper">
+        <a ui-sref="add" class="add pull-right"><span class="glyphicon glyphicon-plus"></span> Add Customer</a>
+        <table class="table table-bordered">
+            <thead>
+            <tr>
+                <th>Firstname</th>
+                <th>Lastname</th>
+                <th>Email</th>
+                <th></th>
+                <th></th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr ng-repeat="cst in customers track by $index">
+                <td>{{cst.firstName}}</td>
+                <td>{{cst.lastName}}</td>
+                <td>{{cst.email}}</td>
+                <td align="center"><a ng-click="edit(cst)"><span class="glyphicon glyphicon-pencil"></span> Edit</a>
+                </td>
+                <td align="center"><a ng-click="delete(cst)"> <span class="glyphicon glyphicon-trash"></span> Delete</a>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
